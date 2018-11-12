@@ -418,8 +418,8 @@ func (self *ClusterNode) FlushNodeConfig() {
 				array = append(array, s)
 				self.info.slots[s] = AssignedHashSlot
 			}
-			self.ClusterAddSlots(array)
 		}
+		self.ClusterAddSlots(array)
 	}
 
 	self.dirty = false
